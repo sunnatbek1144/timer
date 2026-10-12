@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Pomodoro taymer</title>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="wrap">
+		<div class="top">
+			<h1><i class="fa-solid fa-stopwatch"></i>Pomodoro taymer</h1><a class="back" href="../../index.html"><i
+					class="fa-solid fa-arrow-left"></i> Portfolio</a>
+		</div>
+		<div class="glass box">
+			<div class="modes" id="modes"><button class="on" data-m="25"><i class="fa-solid fa-brain"></i>
+					Fokus</button><button data-m="5"><i class="fa-solid fa-mug-hot"></i> Qisqa tanaffus</button><button
+					data-m="15"><i class="fa-solid fa-couch"></i> Uzun tanaffus</button></div>
+			<div class="ring"><svg viewBox="0 0 200 200">
+					<circle cx="100" cy="100" r="90" class="bg" />
+					<circle cx="100" cy="100" r="90" class="fg" id="fg" />
+				</svg>
+				<div id="t">25:00</div>
+			</div>
+			<div class="ctl"><button id="s" class="go"><i class="fa-solid fa-play"></i>
+					<span>Boshlash</span></button><button id="r" class="rs"><i class="fa-solid fa-rotate-left"></i>
+					Qayta o'rnatish</button></div>
+			<p class="sess"><i class="fa-solid fa-fire"></i> Bajarilgan sessiyalar: <b id="done">0</b></p>
+		</div>
+	</div>
+	<script src="app.js"></script>
+</body>
+
+</html>
